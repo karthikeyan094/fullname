@@ -18,13 +18,13 @@ function App() {
     <div>
   <h1>Full Name Display</h1>
   <form onSubmit={handleSubmit}>
-    <label for='firstname'>First Name:</label>
-    <input onChange={(e)=>setFirstname(e.target.value)} value={firstname} type='text' required name='firstname'/><br/>
-    <label for='lastname'>Last Name:</label>
-    <input onChange={(e)=>setLastname(e.target.value)} value={lastname} type='text' required name='lastname'/><br/>
-    <input type='submit' value={"Submit"}/>
+    <label for='firstName'>First Name:</label>
+    <input onChange={(e)=>setFirstname(e.target.value)} value={firstname} type="text" required name='firstName'/><br/>
+    <label for='lastName'>Last Name:</label>
+    <input onChange={(e)=>setLastname(e.target.value)} value={lastname} type="text" required name='lastName'/><br/>
+    <button type='submit'>Submit</button>
   </form>
-  {displayFullname && <p>Full Name: {`${firstname} ${lastname}`}</p>}
+  {displayFullname && <p>Full Name:{` ${firstname} ${lastname}`}</p>}
     </div>
   );
 }
